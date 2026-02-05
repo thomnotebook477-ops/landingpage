@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nexus Physio | Consultoria de Performance</title>
-  
+  <title>LIPP BARBER | Barbearia em Cabo Verde - MG</title>
+
   <!-- BOOTSTRAP 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- ÍCONES -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-  
+
   <!-- FONTS (Montserrat Black + Open Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- NOVA FONTE PARA "CORPO & MENTE" -->
+  <!-- Fonte para destaque -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  
+
   <!-- SEU CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -28,8 +28,9 @@
   <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container">
       <a class="navbar-brand font-title fw-bold fs-2 tracking-wide" href="#">
-        NEXUS<span class="text-brand">PHYSIO</span>
+        LIPP<span class="text-brand">BARBER</span>
       </a>
+
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
         <span class="ri-menu-4-line text-brand fs-1"></span>
       </button>
@@ -37,11 +38,11 @@
       <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex" id="navbarNav">
         <ul class="navbar-nav align-items-center gap-4 uppercase-nav">
           <li class="nav-item"><a class="nav-link active" href="#home">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="#method">Método</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Planos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#results">Resultados</a></li>
+          <li class="nav-item"><a class="nav-link" href="#method">Experiência</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cuts">Nossos cortes</a></li>
           <li class="nav-item">
-            <a href="#contact" class="btn btn-brand rounded-0 px-4 fw-bold">CONSULTORIA</a>
+            <a href="#contact" class="btn btn-brand rounded-0 px-4 fw-bold">AGENDAR</a>
           </li>
         </ul>
       </div>
@@ -51,67 +52,91 @@
   <!-- MENU MOBILE -->
   <div class="offcanvas offcanvas-end bg-black text-white" tabindex="-1" id="offcanvasNavbar">
     <div class="offcanvas-header border-bottom border-secondary">
-      <h5 class="offcanvas-title font-title text-brand">MENU</h5>
+      <h5 class="offcanvas-title font-title text-brand">Menu</h5>
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
     </div>
-    <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center gap-4">
-      <a href="#home" class="nav-link fs-4 uppercase-nav" data-bs-dismiss="offcanvas">Início</a>
-      <a href="#method" class="nav-link fs-4 uppercase-nav" data-bs-dismiss="offcanvas">Método</a>
-      <a href="#services" class="nav-link fs-4 uppercase-nav" data-bs-dismiss="offcanvas">Planos</a>
-      <a href="#contact" class="btn btn-brand btn-lg w-100 rounded-0">Agendar</a>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 uppercase-nav">
+        <li class="nav-item"><a class="nav-link active" href="#home">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#method">Experiência</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cuts">Nossos cortes</a></li>
+      </ul>
+      <div class="mt-4">
+        <a href="#contact" class="btn btn-brand w-100 rounded-0 fw-bold">AGENDAR</a>
+      </div>
     </div>
   </div>
 
-  <!-- HERO SECTION -->
-  <section id="home" class="hero position-relative d-flex align-items-center justify-content-center text-center">
-    <div class="hero-bg-image" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop');"></div>
+  <!-- HERO -->
+  <section id="home" class="hero-section d-flex align-items-center text-center position-relative">
+    <div class="hero-bg-image"
+         style="background-image: url('hero.png');"></div>
     <div class="hero-overlay"></div>
 
     <div class="container position-relative z-2 animate-in">
-      <p class="text-brand letter-spacing-4 text-uppercase mb-3 fw-bold">Consultoria Online de Emagrecimento</p>
+      <p class="text-brand letter-spacing-4 text-uppercase mb-3 fw-bold">Barbearia em Cabo Verde - MG</p>
       <h1 class="display-1 font-title fw-bold text-white mb-4 text-uppercase">
-        Transforme Seu <br><span class="text-outline-brand">Corpo & Mente</span>
+        Corte & Barba <br><span class="text-outline-brand">na régua</span>
       </h1>
       <p class="lead text-light opacity-75 mb-5 mx-auto" style="max-width: 650px;">
-        Método validado que une nutrição estratégica e treinamento inteligente. Chega de dietas restritivas. Resultados reais e duradouros.
+        Atendimento direto, ambiente confortável e foco total no seu estilo. Do clássico ao moderno, aqui é acabamento limpo.
       </p>
       <div class="d-flex justify-content-center gap-3">
-        <a href="#services" class="btn btn-outline-light rounded-0 px-5 py-3 text-uppercase tracking-wide">Começar Transformação</a>
+        <a href="#contact" class="btn btn-outline-light rounded-0 px-5 py-3 text-uppercase tracking-wide">Agendar Horário</a>
       </div>
     </div>
   </section>
 
-  <!-- METODOLOGIA -->
+  <!-- EXPERIÊNCIA -->
   <section id="method" class="section-padding bg-dark-grey overflow-hidden">
     <div class="container">
       <div class="row align-items-center g-5">
         <div class="col-lg-6 position-relative">
           <div class="img-frame border-brand animate-in">
-            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop" alt="Metodologia" class="img-fluid w-100">
+            <div class="video-wrapper">
+  <video
+    autoplay
+    loop
+    muted
+    playsinline
+  >
+    <source src="experiencia.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo.
+  </video>
+</div>
+
           </div>
         </div>
         <div class="col-lg-6 animate-in">
           <h6 class="text-brand text-uppercase letter-spacing-2 mb-3">Como Funciona</h6>
           <h2 class="font-title text-white display-5 fw-bold text-uppercase mb-4">
-            A Ciência do <br>Emagrecimento
+            A Experiência <br>Lipp Barber
           </h2>
           <p class="text-secondary mb-4">
-            Não acreditamos em pílulas mágicas. Nosso protocolo é baseado na regulação hormonal e no déficit calórico inteligente, garantindo que você perca gordura sem perder massa muscular.
+            Aqui o foco é acabamento, respeito ao cliente e um corte que combina com você. Do degradê ao social, a gente entrega estilo na régua.
           </p>
-          
+
           <ul class="list-unstyled mt-4">
             <li class="d-flex align-items-start mb-3">
-              <i class="ri-fire-line text-brand fs-4 me-3"></i>
+              <i class="ri-scissors-line text-brand fs-4 me-3"></i>
               <div>
-                <h5 class="font-title text-white mb-1">Destravamento Metabólico</h5>
-                <p class="small text-secondary">Estratégias para acelerar seu metabolismo basal naturalmente.</p>
+                <h5 class="font-title text-white mb-1">Corte Personalizado</h5>
+                <p class="small text-secondary">Ajustado ao seu formato e ao seu estilo.</p>
               </div>
             </li>
             <li class="d-flex align-items-start mb-3">
-              <i class="ri-smartphone-line text-brand fs-4 me-3"></i>
+              <i class="ri-sparkling-line text-brand fs-4 me-3"></i>
               <div>
-                <h5 class="font-title text-white mb-1">Suporte 24h</h5>
-                <p class="small text-secondary">Acesso direto ao especialista via WhatsApp para tirar dúvidas.</p>
+                <h5 class="font-title text-white mb-1">Acabamento na Régua</h5>
+                <p class="small text-secondary">Detalhe que faz diferença: alinhamento e finalização.</p>
+              </div>
+            </li>
+            <li class="d-flex align-items-start mb-3">
+              <i class="ri-user-smile-line text-brand fs-4 me-3"></i>
+              <div>
+                <h5 class="font-title text-white mb-1">Atendimento Direto</h5>
+                <p class="small text-secondary">Sem enrolação. Você chega, senta e sai pronto.</p>
               </div>
             </li>
           </ul>
@@ -124,24 +149,23 @@
   <section id="services" class="section-padding bg-grid">
     <div class="container position-relative z-2">
       <div class="text-center mb-5 animate-in">
-        <span class="text-brand text-uppercase fw-bold">Nossos Programas</span>
-        <h2 class="font-title text-white display-4 text-uppercase">Escolha seu Objetivo</h2>
+        <span class="text-brand text-uppercase fw-bold">Nossos Serviços</span>
+        <h2 class="font-title text-white display-4 text-uppercase">Tabela</h2>
         <div class="separator mx-auto mt-3"></div>
       </div>
 
       <div class="row g-4">
         <div class="col-md-4 animate-in">
           <div class="service-card p-4 h-100 position-relative">
-            <i class="ri-weight-line text-brand fs-1 mb-3"></i>
-            <h3 class="font-title text-white h4 mb-3">Emagrecimento 30D</h3>
-            <p class="text-secondary small">
-              Desafio de 90 dias para secar. Foco total em queima de gordura e desinchaço com dieta low carb estratégica.
-            </p>
-            <button class="btn btn-link text-brand text-decoration-none p-0 mt-3 stretched-link" 
-                    data-bs-toggle="modal" 
+            <i class="ri-scissors-line text-brand fs-1 mb-3"></i>
+            <h3 class="font-title text-white h4 mb-1">Corte de Cabelo</h3>
+            <p class="text-secondary small mb-2">Corte clássico ou moderno, com acabamento limpo.</p>
+            <div class="text-white fw-bold mb-2">R$ 30,00</div>
+            <button class="btn btn-link text-brand text-decoration-none p-0 mt-2 stretched-link"
+                    data-bs-toggle="modal"
                     data-bs-target="#dynamicModal"
-                    data-type="emagrecimento">
-                    Ver detalhes <i class="ri-arrow-right-line"></i>
+                    data-type="corte">
+              Ver detalhes <i class="ri-arrow-right-line"></i>
             </button>
           </div>
         </div>
@@ -149,31 +173,59 @@
         <div class="col-md-4 animate-in">
           <div class="service-card p-4 h-100 position-relative active">
             <i class="ri-user-star-line text-brand fs-1 mb-3"></i>
-            <h3 class="font-title text-white h4 mb-3">Consultoria Premium</h3>
-            <p class="text-secondary small">
-              Acompanhamento trimestral com ajustes quinzenais na dieta e treino. Ideal para quem busca transformação total.
-            </p>
-            <button class="btn btn-link text-brand text-decoration-none p-0 mt-3 stretched-link" 
-                    data-bs-toggle="modal" 
+            <h3 class="font-title text-white h4 mb-1">Corte + Barba</h3>
+            <p class="text-secondary small mb-2">Combo completo pra sair na régua.</p>
+            <div class="text-white fw-bold mb-2">R$ 40,00</div>
+            <button class="btn btn-link text-brand text-decoration-none p-0 mt-2 stretched-link"
+                    data-bs-toggle="modal"
                     data-bs-target="#dynamicModal"
-                    data-type="premium">
-                    Ver detalhes <i class="ri-arrow-right-line"></i>
+                    data-type="corte_barba">
+              Ver detalhes <i class="ri-arrow-right-line"></i>
             </button>
           </div>
         </div>
 
         <div class="col-md-4 animate-in">
           <div class="service-card p-4 h-100 position-relative">
-            <i class="ri-mental-health-line text-brand fs-1 mb-3"></i>
-            <h3 class="font-title text-white h4 mb-3">Reeducação & Saúde</h3>
-            <p class="text-secondary small">
-              Para quem quer sair do sedentarismo e melhorar exames de sangue. Foco em saúde preventiva e bem-estar.
-            </p>
-            <button class="btn btn-link text-brand text-decoration-none p-0 mt-3 stretched-link" 
-                    data-bs-toggle="modal" 
+            <i class="ri-brush-line text-brand fs-1 mb-3"></i>
+            <h3 class="font-title text-white h4 mb-1">Pé de Cabelo</h3>
+            <p class="text-secondary small mb-2">Alinhamento e acabamento do pé.</p>
+            <div class="text-white fw-bold mb-2">R$ 15,00</div>
+            <button class="btn btn-link text-brand text-decoration-none p-0 mt-2 stretched-link"
+                    data-bs-toggle="modal"
                     data-bs-target="#dynamicModal"
-                    data-type="saude">
-                    Ver detalhes <i class="ri-arrow-right-line"></i>
+                    data-type="pe">
+              Ver detalhes <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-6 animate-in">
+          <div class="service-card p-4 h-100 position-relative">
+            <i class="ri-drop-line text-brand fs-1 mb-3"></i>
+            <h3 class="font-title text-white h4 mb-1">Pigmentação</h3>
+            <p class="text-secondary small mb-2">Realce e acabamento com pigmentação.</p>
+            <div class="text-white fw-bold mb-2">R$ 10,00</div>
+            <button class="btn btn-link text-brand text-decoration-none p-0 mt-2 stretched-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#dynamicModal"
+                    data-type="pigmentacao">
+              Ver detalhes <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-6 animate-in">
+          <div class="service-card p-4 h-100 position-relative">
+            <i class="ri-eye-line text-brand fs-1 mb-3"></i>
+            <h3 class="font-title text-white h4 mb-1">Sobrancelha</h3>
+            <p class="text-secondary small mb-2">Design e limpeza pra finalizar o visual.</p>
+            <div class="text-white fw-bold mb-2">R$ 5,00</div>
+            <button class="btn btn-link text-brand text-decoration-none p-0 mt-2 stretched-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#dynamicModal"
+                    data-type="sobrancelha">
+              Ver detalhes <i class="ri-arrow-right-line"></i>
             </button>
           </div>
         </div>
@@ -181,32 +233,65 @@
     </div>
   </section>
 
-  <!-- RESULTADOS -->
-  <section id="results" class="section-padding bg-image-fixed" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=2069&auto=format&fit=crop');">
+  <!-- NOSSOS CORTES (6 fotos) -->
+  <section id="cuts" class="section-padding bg-dark-grey">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center animate-in">
-          <i class="ri-double-quotes-l text-brand display-3 mb-4"></i>
-          
-          <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <p class="lead text-white font-italic mb-4">"Eu já tinha tentado de tudo, mas só com a consultoria entendi onde errava. Perdi 8kg no primeiro mês sem passar fome!"</p>
-                <h5 class="font-title text-brand">Juliana R.</h5>
-                <small class="text-secondary">Plano Emagrecimento 30D</small>
-              </div>
-              <div class="carousel-item">
-                <p class="lead text-white font-italic mb-4">"O treino é muito bem montado e a dieta cabe na rotina. O suporte no WhatsApp faz toda a diferença."</p>
-                <h5 class="font-title text-brand">Marcos V.</h5>
-                <small class="text-secondary">Consultoria Premium</small>
-              </div>
-            </div>
-            <div class="mt-4">
-               <button class="btn btn-sm btn-outline-secondary border-0" data-bs-target="#testimonialCarousel" data-bs-slide="prev"><i class="ri-arrow-left-line"></i></button>
-               <button class="btn btn-sm btn-outline-secondary border-0" data-bs-target="#testimonialCarousel" data-bs-slide="next"><i class="ri-arrow-right-line"></i></button>
-            </div>
+      <div class="text-center mb-5 animate-in">
+        <span class="text-brand text-uppercase fw-bold">Portfólio</span>
+        <h2 class="font-title text-white display-4 text-uppercase">Nossos Cortes</h2>
+        <p class="text-secondary mt-3 mb-0">Alguns trabalhos realizados na Lipp Barber.</p>
+        <div class="separator mx-auto mt-3"></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- TROCAR IMAGENS AQUI (6 fotos) -->
+        <div class="col-md-4 col-sm-6 animate-in">
+          <div class="cut-card">
+            <img src="https://images.unsplash.com/photo-1519500528352-2d1460418d41?q=80&w=1200&auto=format&fit=crop"
+                 alt="Corte 1" class="img-fluid">
           </div>
         </div>
+
+        <div class="col-md-4 col-sm-6 animate-in">
+          <div class="cut-card">
+            <img src="https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1?q=80&w=1200&auto=format&fit=crop"
+                 alt="Corte 2" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 animate-in">
+          <div class="cut-card">
+            <img src="https://images.unsplash.com/photo-1596728325488-58c87691e9a7?q=80&w=1200&auto=format&fit=crop"
+                 alt="Corte 3" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 animate-in">
+          <div class="cut-card">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1200&auto=format&fit=crop"
+                 alt="Corte 4" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 animate-in">
+          <div class="cut-card">
+            <img src="https://images.unsplash.com/photo-1588514727390-91a1c3a08ec4?q=80&w=1200&auto=format&fit=crop"
+                 alt="Corte 5" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 animate-in">
+          <div class="cut-card">
+            <img src="https://images.unsplash.com/photo-1622296089863-eb7fc530daa8?q=80&w=1200&auto=format&fit=crop"
+                 alt="Corte 6" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5 animate-in">
+        <a href="#contact" class="btn btn-brand rounded-0 px-5 py-3 fw-bold text-uppercase tracking-wide">
+          Agendar Horário
+        </a>
       </div>
     </div>
   </section>
@@ -216,27 +301,29 @@
     <div class="container position-relative z-2">
       <div class="row g-5">
         <div class="col-lg-5 animate-in">
-          <h6 class="text-brand text-uppercase">Fale Conosco</h6>
-          <h2 class="font-title text-white display-5 mb-4 text-uppercase">Comece Hoje Sua<br>Melhor Versão</h2>
-          <p class="text-secondary mb-5">Preencha o formulário e nossa equipe entrará em contato para entender seus objetivos e indicar o melhor plano.</p>
-          
+          <h6 class="text-brand text-uppercase">Agendamento</h6>
+          <h2 class="font-title text-white display-5 mb-4 text-uppercase">Agende Hoje Seu<br>Horário</h2>
+          <p class="text-secondary mb-5">
+            Preencha rapidinho e envie. Se preferir, clique no WhatsApp e agende direto com a barbearia.
+          </p>
+
           <div class="d-flex gap-3 mb-4">
-            <div class="d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; border: 1px solid var(--brand-color); box-shadow: 0 0 10px rgba(191,0,255,0.2);">
+            <div class="d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; border: 1px solid var(--brand-color); box-shadow: 0 0 10px rgba(201,162,39,0.2);">
               <i class="ri-whatsapp-line fs-4 text-brand"></i>
             </div>
             <div>
               <h5 class="font-title text-white mb-0">WhatsApp</h5>
-              <small class="text-secondary">(35) 9940-9215</small>
+              <small class="text-secondary">(DDD) 9XXXX-XXXX</small>
             </div>
           </div>
-          
+
           <div class="d-flex gap-3">
-            <div class="d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; border: 1px solid var(--brand-color); box-shadow: 0 0 10px rgba(191,0,255,0.2);">
-              <i class="ri-mail-line fs-4 text-brand"></i>
+            <div class="d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; border: 1px solid var(--brand-color); box-shadow: 0 0 10px rgba(201,162,39,0.2);">
+              <i class="ri-instagram-line fs-4 text-brand"></i>
             </div>
             <div>
-              <h5 class="font-title text-white mb-0">E-mail</h5>
-              <small class="text-secondary">contato@nexusphysio.com</small>
+              <h5 class="font-title text-white mb-0">Instagram</h5>
+              <small class="text-secondary">@lippbarber</small>
             </div>
           </div>
         </div>
@@ -244,9 +331,9 @@
         <div class="col-lg-7 animate-in">
           <form class="p-4 border border-secondary bg-dark-grey position-relative shadow-lg" id="contactForm">
             <div id="formSuccess" class="position-absolute top-0 start-0 w-100 h-100 bg-dark-grey d-flex flex-column align-items-center justify-content-center z-3 d-none">
-                <i class="ri-check-double-line text-brand display-1 mb-3"></i>
-                <h4 class="font-title text-white">Mensagem Enviada!</h4>
-                <p class="text-secondary">Fique atento ao seu WhatsApp.</p>
+              <i class="ri-check-double-line text-brand display-1 mb-3"></i>
+              <h4 class="font-title text-white">Mensagem Enviada!</h4>
+              <p class="text-secondary">Abrimos o WhatsApp para você finalizar o agendamento.</p>
             </div>
 
             <div class="row g-3">
@@ -265,22 +352,26 @@
               <div class="col-12">
                 <div class="form-floating">
                   <select class="form-select" id="interesse">
-                    <option selected>Qual seu principal objetivo?</option>
-                    <option value="perder">Perder Gordura</option>
-                    <option value="ganhar">Ganhar Músculos</option>
-                    <option value="saude">Melhorar Saúde</option>
+                    <option selected>Qual serviço você quer?</option>
+                    <option value="corte">Corte de cabelo</option>
+                    <option value="corte_barba">Corte + barba</option>
+                    <option value="pe">Pé de cabelo</option>
+                    <option value="pigmentacao">Pigmentação</option>
+                    <option value="sobrancelha">Sobrancelha</option>
                   </select>
-                  <label for="interesse">Objetivo</label>
+                  <label for="interesse">Serviço</label>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-floating">
                   <textarea class="form-control" placeholder="Mensagem" id="msg" style="height: 120px"></textarea>
-                  <label for="msg">Conte sua maior dificuldade hoje...</label>
+                  <label for="msg">Alguma observação? (opcional)</label>
                 </div>
               </div>
               <div class="col-12">
-                <button type="submit" class="btn btn-brand w-100 py-3 fw-bold text-uppercase tracking-wide">Solicitar Avaliação</button>
+                <button type="submit" class="btn btn-brand w-100 py-3 fw-bold text-uppercase tracking-wide">
+                  Enviar e Agendar
+                </button>
               </div>
             </div>
           </form>
@@ -292,12 +383,14 @@
   <!-- FOOTER -->
   <footer class="bg-black border-top border-secondary py-5 text-center">
     <div class="container">
-      <h3 class="font-title text-white mb-4">NEXUS<span class="text-brand">PHYSIO</span></h3>
+      <h3 class="font-title text-white mb-3">LIPP<span class="text-brand">BARBER</span></h3>
+      <p class="text-secondary small mb-4">Barbearia em Cabo Verde - MG</p>
+
       <div class="d-flex justify-content-center gap-4 mb-4">
-        <a href="#" class="text-secondary hover-brand fs-4"><i class="ri-instagram-line"></i></a>
-        <a href="#" class="text-secondary hover-brand fs-4"><i class="ri-facebook-fill"></i></a>
-        <a href="#" class="text-secondary hover-brand fs-4"><i class="ri-whatsapp-line"></i></a>
+        <a href="#" class="text-secondary hover-brand fs-4" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+        <a href="#contact" class="text-secondary hover-brand fs-4" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
       </div>
+
       <p class="text-secondary small mb-0">&copy; <span id="year"></span> thomwqz. Todos os direitos reservados.</p>
     </div>
   </footer>
@@ -313,13 +406,17 @@
         <div class="modal-body">
           <p id="modalDesc">Descrição...</p>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-transparent text-white border-secondary"><i class="ri-time-line text-brand"></i> Duração: <span id="modalDuration">-</span></li>
-             <li class="list-group-item bg-transparent text-white border-secondary"><i class="ri-whatsapp-line text-brand"></i> Acompanhamento Diário</li>
+            <li class="list-group-item bg-transparent text-white border-secondary">
+              <i class="ri-money-dollar-circle-line text-brand"></i> Valor: <span id="modalDuration">-</span>
+            </li>
+            <li class="list-group-item bg-transparent text-white border-secondary">
+              <i class="ri-user-smile-line text-brand"></i> Atendimento direto
+            </li>
           </ul>
         </div>
         <div class="modal-footer border-secondary">
           <button type="button" class="btn btn-sm btn-outline-light" data-bs-dismiss="modal">Fechar</button>
-          <a href="#contact" class="btn btn-sm btn-brand">Quero Começar</a>
+          <a href="#contact" class="btn btn-sm btn-brand">Agendar</a>
         </div>
       </div>
     </div>
